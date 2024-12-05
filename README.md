@@ -1,20 +1,14 @@
-# Angular Homes App
+# Nadlanplan APP
 - Install Angular if you don't have it installed
 
   `npm install -g @angular/cli`
 
-- Clone this branch to your local machine
+- Run the website:
 
-  `git clone -b homes-app-start git@github.com:angular/codelabs.git homes-app`
+  `(path)ng serve`
 
-- Once the code has been downloaded
+- Run the json file:
 
-  `cd homes-app`
+  `(path)json-server --watch db.json`
 
-- Install the depencies
-
-  `npm install` 
-
-- Run the application 
-
-  `ng serve`
+- Note - Housing locations wont display if Json page is off!
