@@ -1,0 +1,107 @@
+/* Put these styles in: src/home/home.component.css */
+
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+  
+  input[type="text"] {
+    border: solid 1px var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 30%;
+  }
+  .Title {
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    font-size: 2.5rem; /* Large, prominent size */
+    font-weight: 700; /* Bold and eye-catching */
+    text-transform: uppercase; /* Makes the text all uppercase */
+    text-align: center; /* Centers the title on the page */
+    color: #0078D7; /* Vibrant blue for a modern look */
+    letter-spacing: 2px; /* Adds spacing between letters for style */
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds depth with shadow */
+    margin: 20px 0; /* Space around the title */
+    position: relative; /* Needed for pseudo-elements */
+  }
+  
+  .Title::before, .Title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #0078D7; /* Same color as the text */
+    margin: 10px auto; /* Space around the lines */
+  }
+  
+  .Title::before {
+    margin-bottom: -6px; /* Adjusts the top line closer */
+  }
+  
+  .Title::after {
+    margin-top: -6px; /* Adjusts the bottom line closer */
+  }
+  
+  .Title:hover {
+    color: #0056b3; /* Slightly darker blue on hover */
+    text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  .search{
+    text-align: center;
+    margin-left: 630px;
+  }
+  
+
+  .back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff; /* Optional: Styling for button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between icon and text */
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* Optional: Hover effect */
+    transform: scale(1.05);
+  }
+
+  .back-button:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
+  }
+  
+  button {
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+  }
+  
+  @media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+        width: 70%;
+    }   
+  }
+  
+  @media (max-width: 499px) {
+    .results {
+        grid-template-columns: 1fr;
+    }    
+  }

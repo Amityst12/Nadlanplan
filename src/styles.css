@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files*/
+/*is the app's top level style sheet. */
+
+/* Put these styles in: src/styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+  :root {
+    --primary-color: #605DC8;
+    --secondary-color: #8B89E6;
+    --accent-color: #e8e7fa;
+    --shadow-color: #E8E8E8;
+  }
+  
+  button.primary {
+    padding: 12px 20px; /* Add more padding for a better look */
+    border: none; /* Remove solid border for a cleaner style */
+    background: linear-gradient(45deg, var(--primary-color), #4cafec); /* Vibrant gradient */
+    color: white; /* White text for contrast */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px; /* Slightly larger font size for readability */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+    transition: all 0.3s ease; /* Smooth transition for hover/click effects */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  button.primary:hover {
+    background: linear-gradient(45deg, #4cafec, var(--primary-color)); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  }
+  
+  button.primary:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Dim shadow on click */
+  }
+  
+  button.primary:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0px 0px 8px var(--primary-color); /* Glowing border on focus */
+  }

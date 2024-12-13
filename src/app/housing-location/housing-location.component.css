@@ -1,0 +1,74 @@
+/* Put these styles in: src/app/housing-location/housing-location.component.css */
+
+.listing {
+    background: var(--accent-color);
+    border-radius: 30px;
+    padding-bottom: 30px;
+  }
+  .listing-heading {
+    color: var(--primary-color);
+    padding: 10px 20px 0 20px;
+  }
+  .listing-photo {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+  }
+  .listing-location {
+    padding: 10px 20px 20px 20px;
+  }
+  .listing-location::before {
+    content: url("/assets/location-pin.svg") / "";
+  }
+  .listing-drugs{
+    margin-top: -5px;
+    padding: 0px 20px 20px 20px;
+    margin-left: 20px;
+  }
+  .listing-lolis{
+    margin-top: -15px;
+    margin-left: 20px;
+    padding: 0px 20px 20px 20px;
+  }
+  .listing-dogs{
+    margin-top: -15px;
+    margin-left: 20px;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  section.listing a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  section.listing a::after {
+    content: "\203A";
+    margin-left: 5px;
+  }
+  .learn-more {
+    margin-left: 270px;
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 8px 16px; /* Adds comfortable spacing */
+    font-size: 14px; /* Slightly smaller and calmer font size */
+    font-weight: 500; /* Semi-bold but not overpowering */
+    text-decoration: none; /* Removes the underline */
+    color: #0056b3; /* Calm blue text color */
+    background-color: #e9f4ff; /* Light blue background for a softer look */
+    border: 1px solid #cfe3f8; /* Subtle border for structure */
+    border-radius: 6px; /* Soft rounded corners */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    text-align: center; /* Centers the text */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Gentle shadow for depth */
+    cursor: pointer; /* Indicates it’s clickable */
+  }
+  
+  .learn-more:hover {
+    background-color: #d6e9ff; /* Slightly darker blue on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slightly increased shadow for a hover effect */
+  }
+  
+  .learn-more:active {
+    background-color: #cfe3f8; /* Light blue when active */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Reset shadow on click */
+  }
